@@ -9,12 +9,11 @@ contract errorHandling
     // address variable that stores the address of the owner
     address owner = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;
 
-    function testAssert() public view
+    function testAssert(address _z) public view returns (address)
     {
         // checks if the person deploying the contract is the owner
-        assert(msg.sender==owner);
-    }
-
+        assert(msg.sender==_z);
+        return _z;
 
     function testRevert(uint _x) public pure returns (uint) 
     {
