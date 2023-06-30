@@ -9,11 +9,12 @@ contract errorHandling
     // address variable that stores the address of the owner
     address owner = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;
 
-    function testRequire() public view
+    function testAssert() public view
     {
-        // checks if the person deploying the contract is the owner, if not it returns an error
-        require(msg.sender==owner,"You are not the owner");
+        // checks if the person deploying the contract is the owner
+        assert(msg.sender==owner);
     }
+
 
     function testRevert(uint _x) public pure returns (uint) 
     {
