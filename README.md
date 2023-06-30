@@ -36,4 +36,4 @@ Interact using the given parameters and see the functionality of the error handl
 The program uses an MIT License
 
 ## Video Walkthrough
-[![video](https://wallpaperaccess.com/full/4766059.jpg)](https://www.youtube.com/watch?v=ubFq-wV3Eic&pp=ygUGc3RhdGlj)
+[video](https://www.loom.com/share/ecfead17b4244bf584d1cd7ea1d21667?sid=314a7ad2-162f-4198-8a1b-7642d25ad080)
