@@ -5,6 +5,8 @@ pragma solidity 0.8.18;
 
 contract errorHandling
 {
+
+    // address variable that stores the address of the owner
     address owner = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;
 
     function testRequire() public view
@@ -15,6 +17,7 @@ contract errorHandling
 
     function testRevert(uint _x) public pure returns (uint) 
     {
+            // checks if the value of _x is greater than 10 or not and reverts an error if it is not
             if(_x<10)
             {
                 revert("enter a value greater than 10");
@@ -23,7 +26,8 @@ contract errorHandling
     }
 
     function testRequire(uint numerator, uint denominator) public pure returns (uint) 
-    {
+    {    
+        // checks if the denominator is not equal to 0, and returns an error if it is zero or returns the quotient if it is not equal to 0
         require(denominator != 0, "Denominator cannot be zero");
         uint _z = numerator / denominator;
         return _z;
